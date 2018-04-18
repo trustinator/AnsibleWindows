@@ -1,0 +1,6 @@
+- name: "Run powershell script"
+  hosts: all
+  gather_facts: "false"
+  tasks:
+    - name: "Start Windows Update"
+      script: "https://github.com/trustinator/AnsibleWindows/winupdate.ps1"
