@@ -1,4 +1,6 @@
 - name: "Run powershell script"
+  ansible_connection: winrm
+  ansible_winrm_transport: basic
   hosts: all
   gather_facts: "false"
   tasks:
